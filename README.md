@@ -4,3 +4,5 @@
 
 HTML, CSS, JavaScript, React
 
+- Static Website
+- Reusable Components
