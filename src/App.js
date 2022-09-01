@@ -4,11 +4,7 @@ import data from './data'
 import Post from './components/Post'
 
 function App() {
-  const posts = data.map(post => {
-    return (
-      <Post post={post} />
-    )
-  })
+  const posts = data.map(post => <Post post={post} />)
 
   return (
     <div className="app">
@@ -16,7 +12,9 @@ function App() {
         <img src={logo} className='logo'></img>
         <h2>my travel journal.</h2>
       </header>
-      {posts}
+      <section>
+        {posts}
+      </section>
     </div>
   );
 }
